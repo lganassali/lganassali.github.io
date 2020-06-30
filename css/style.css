@@ -13,12 +13,12 @@ body{
 
 img{
 	vertical-align: middle;
-}
-
-.presimage{
 	padding-left: 10px;
 	padding-right: 10px;
 	opacity: 1;
+}
+
+.presimage{
 	border-radius: 50%;
 }
 
