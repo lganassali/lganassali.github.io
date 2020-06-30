@@ -9,6 +9,11 @@
 	color:#fa625f;
 }
 
+.toggle-trigger:hover {
+	border-bottom: 1px #fa625f dotted;
+	margin-bottom: -2px;
+}
+
 .toggle-wrap {
     padding: 1px;
     display: none;
