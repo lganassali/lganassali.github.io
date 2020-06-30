@@ -17,12 +17,12 @@ img{
 }
 
 h1 {
-	color = DodgerBlue;
+	color = blue;
 	font-size: 27px;
 }
 
 h2 {
-	color = DodgerBlue;
+	color = blue;
 	text-decoration: underline;
 	font-size: 19px;
 }
@@ -35,7 +35,6 @@ p{
 a{
 	color: Darkred;
 	text-decoration: none;
-	
 }
 
 .abstract{
@@ -45,10 +44,8 @@ a{
 	opacity: 0.7;
 }
 
-
-
 .flotteg {
-	float=left;
+	float="left";
 }
 
 .grayback{
