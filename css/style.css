@@ -1,0 +1,28 @@
+.toggle-trigger {
+
+    padding: 1px;
+    background: white;
+	font-family: Futura, serif;
+	padding-bottom: 1px;
+	margin: 0;
+	cursor: pointer;
+	color:#fa625f;
+}
+
+.toggle-trigger:hover {
+	border-bottom: 1px #fa625f dotted;
+	margin-bottom: -2px;
+}
+
+.toggle-wrap {
+    padding: 1px;
+    display: none;
+    background: white;
+	font-family: Futura, serif;
+	padding-bottom: 8px;
+	margin: 0;
+}
+
+p{
+color = red;
+}
