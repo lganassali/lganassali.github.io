@@ -4,7 +4,7 @@
 <head>
 	<title> Luca Ganassali </title>
 	<meta charset = "utf-8"/>
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
 	<h1> Luca Ganassali </h1>
@@ -84,5 +84,11 @@
 	
 	
 </body>
-
+<script>
+$(document).ready(function() {
+    $(".toggle-trigger").click(function() {
+        $(this).parent().nextAll('.toggle-wrap').first().slideToggle('slow');
+    });
+});
+</script>
 </html>
