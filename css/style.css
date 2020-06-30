@@ -17,12 +17,12 @@ img{
 }
 
 h1 {
-	color = blue;
+	color:DodgerBlue;
 	font-size: 27px;
 }
 
 h2 {
-	color = blue;
+	color:DodgerBlue;
 	text-decoration: underline;
 	font-size: 19px;
 }
@@ -45,11 +45,11 @@ a{
 }
 
 .flotteg {
-	float="left";
+	float:left;
 }
 
 .grayback{
-	background-color: lightgrey;
+	background-color:lightgrey;
 }
 /*
 .toggle-trigger {
