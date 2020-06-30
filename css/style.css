@@ -1,9 +1,35 @@
-body {
-	size:14pt;
+body{
+	margin: 100px;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  border: 1px solid #93DDFF;
+  border-radius: 5px;
+  background: Lightskyblue;
+  color: black;
+  margin: auto;
+  padding: 5px;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 30px;
 }
 
 p{
-	color:red;
+	font-size: 14px;
+}
+
+.presborder{
+	border-color: Lightskyblue;
+	border-style: solid;
+	border-width: 5px;
+}
+
+.abstract{
+	font-style: italic;
 }
 
 .grayback{
