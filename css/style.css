@@ -12,7 +12,8 @@ body{
 }
 
 .presimage{
-	padding: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	opacity: 1;
 	border-radius: 50%;
 	vertical-align: middle;
