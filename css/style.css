@@ -30,6 +30,8 @@ p{
 
 .abstract{
 	font-style: italic;
+	color:SlateGray;
+	font-size: 16px;
 }
 
 .grayback{
