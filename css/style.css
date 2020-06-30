@@ -12,6 +12,7 @@ body{
 }
 
 img{
+	padding: 5px;
 	vertical-align: middle;
 	opacity: 1;
 	border-radius: 50%;
