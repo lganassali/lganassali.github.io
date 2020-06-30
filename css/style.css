@@ -11,12 +11,15 @@ body{
   padding: 70px
 }
 
+img{
+	vertical-align: middle;
+}
+
 .presimage{
 	padding-left: 10px;
 	padding-right: 10px;
 	opacity: 1;
 	border-radius: 50%;
-	vertical-align: middle;
 }
 
 h1 {
