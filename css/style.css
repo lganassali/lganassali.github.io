@@ -11,6 +11,11 @@ body{
   padding: 70px
 }
 
+img{
+  vertical-align:up;
+  opacity: 1.0;
+}
+
 h1 {
 	color = DodgerBlue;
 	font-size: 27px;
@@ -25,6 +30,11 @@ h2 {
 p{
 	font-size: 15px;
 	opacity: 0.8;
+}
+
+a{
+	color: Darkred;
+	
 }
 
 .abstract{
