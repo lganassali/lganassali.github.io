@@ -27,7 +27,7 @@
 
 <!-- HOME -->
 	<p> Welcome to my personal webpage. <br/>
-		As you can see, it is still in progress... </p>
+	 </p>
 		
 
 	<h2> About me </h2>
@@ -37,7 +37,7 @@
 	<a href="https://www.di.ens.fr/dyogene/">DYOGENE</a> team, which is a joint team between INRIA Paris and <a href="https://www.di.ens.fr/"> ENS Paris</a>.<br/>
 	My research interests lie mainly within statistics, probability theory, graph theory and machine learning. More specifically, I'm currently interested in
 	inference problems in graphs and matrices, such as graph alignment. For these problems, several approaches may be followed: analyzing rigorously existing
-	some algorithms based on random models to determine the regimes in which they may suceed, look at the Information-Theoretical thresholds, 
+	algorithms based on random models to determine the regimes in which they may suceed, look at the information-theoretical and computational thresholds, 
 	design and propose new algorithms that explore new regimes.
 	</p>
 	
@@ -51,29 +51,35 @@
 	
 	<h2>Publications and preprints</h2>
 	<ul>
-	
-	<li><p>L.Ganassali, L. Massoulié. <b>From tree matching to sparse graph alignment</b>, 2020, <i>Conference on Learning Theory (COLT) 2020.</i> <br/> 
-	[<a href="https://arxiv.org/abs/2002.01258">arXiv</a>] <!--  <span class="toggle-trigger">[Show Abstract]</span> -->
-	<div class="abstract"> <b>Abstract:</b> 
-	In this paper we consider alignment of sparse graphs, for which we introduce the Neighborhood Tree Matching Algorithm (NTMA). For correlated 
-	Erdős-Rényi random graphs, we prove that the algorithm returns -- in polynomial time -- a positive fraction of correctly matched vertices, 
-	and a vanishing fraction of mismatches. This result holds with average degree of the graphs in O(1) and correlation parameter s that can be 
-	bounded away from 1, conditions under which random graph alignment is particularly challenging. As a byproduct of the analysis we introduce a 
-	matching metric between trees and characterize it for several models of correlated random trees. These results may be of independent interest, 
-	yielding for instance efficient tests for determining whether two random trees are correlated or independent.
+
+	<li><p>M. Akian, L.Ganassali, S. Gaubert, L. Massoulié. <b>Probabilistic and mean-field model of COVID-19 epidemics with user mobility and contact tracing</b>, 2020, <i>submitted.</i> <br/> 
+	[<a href="https://arxiv.org/abs/2009.05304">arXiv</a>] 
+	<div class="abstract"> <b>Short abstract:</b> 
+	We propose a detailed discrete-time model of COVID-19 epidemics coming in two flavours, mean-field and probabilistic. The main contribution lies in several extensions of the basic model that capture i) user mobility - distinguishing routing, i.e. change of residence, from commuting, i.e. daily mobility - and ii) contact tracing procedures. We confront this model to public data on daily hospitalizations, and discuss its application as well as underlying estimation procedures.
 	</div>
 	
 	</p>
 	</li>
 	
-	<li><p> L.Ganassali, M. Lelarge, L. Massoulié. <b>Spectral alignment of correlated Gaussian random matrices</b>, 2019, 
-	preprint. <br/> [<a href="https://arxiv.org/abs/1912.00231">arXiv</a>] <!--  <span class="toggle-trigger">[Show Abstract]</span> --> 
+	<li><p>L.Ganassali, L. Massoulié. <b>From tree matching to sparse graph alignment</b>, 2020, <i>Conference on Learning Theory (COLT) 2020.</i> <br/> 
+	[<a href="https://arxiv.org/abs/2002.01258">arXiv</a>] [<a href="http://proceedings.mlr.press/v125/ganassali20a.html">COLT</a>] 
+	<div class="abstract"> <b>Short abstract:</b> 
+	In this paper we consider alignment of sparse graphs, for which we introduce the Neighborhood Tree Matching Algorithm (NTMA). For correlated 
+	Erdős-Rényi random graphs, we prove that the algorithm returns -- in polynomial time -- a positive fraction of correctly matched vertices, 
+	and a vanishing fraction of mismatches. This result holds with average degree of the graphs in O(1) and correlation parameter s that can be 
+	bounded away from 1, conditions under which random graph alignment is particularly challenging. As a byproduct of the analysis we introduce a 
+	matching metric between trees and characterize it for several models of correlated random trees.
+	</div>
+	
+	</p>
+	</li>
+	
+	<li><p> L.Ganassali, M. Lelarge, L. Massoulié. <b>Spectral alignment of correlated Gaussian random matrices</b>, 2019, <i>submitted.</i> <br/> [<a href="https://arxiv.org/abs/1912.00231">arXiv</a>] 
 	<div class="abstract"> <b>Abstract:</b> 
-	In this paper we analyze a simple method (EIG1) for the problem of matrix alignment, consisting in aligning their leading eigenvectors: given A and B, we 
-	compute v1 and v′1 two leading eigenvectors of A and B. The algorithm returns a permutation Π^ such that the rank of the coordinate Π^(i) in v1 is the 
-	rank of the coordinate i in v′1 (up to the sign of v′1). We consider a model where A belongs to the Gaussian Orthogonal Ensemble (GOE), and B=ΠT(A+σH)Π, 
-	where Π is a permutation matrix and H is an independent copy of A. We show the following 0-1 law: under the condition σN7/6+ϵ→0, the EIG1 method recovers 
-	all but a vanishing part of the underlying permutation Π. When σN7/6−ϵ→∞, this algorithm cannot recover more than o(N) correct matches. This result gives an 
+	In this paper we analyze a simple method (EIG1) for the problem of matrix alignment: given A and B, we 
+	compute two leading eigenvectors of A and B. The algorithm returns a permutation that aligns these vectors (up to their sign).
+	We analyze this algorithm in a standard Wigner model, and show a 0-1 law, that is a threshold on the signal-to-noise ratio above which under which the EIG1 method recovers 
+	all but a vanishing part of the underlying permutation, and under which this algorithm cannot recover more than a vansihing proportion of correct matches. This result gives an 
 	understanding of the simplest and fastest spectral method for matrix alignment (or complete weighted graph alignment), and involves proof methods and 
 	techniques which could be of independent interest.
 	</div>
