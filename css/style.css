@@ -24,14 +24,16 @@ img{
 }
 
 h1 {
-	color:DodgerBlue;
+	color:#034694;
 	font-size: 27px;
+	font-family: Georgia, serif;
 }
 
 h2 {
-	color:DodgerBlue;
+	color:#034694;
 	text-decoration: underline;
 	font-size: 19px;
+	font-family: Georgia, serif;
 }
 
 p{
