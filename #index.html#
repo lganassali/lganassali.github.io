@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171285399-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-171285399-1');
+	</script>
+
+	<title> Luca Ganassali </title>
+	<meta charset = "utf-8"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+<!-- BORDER 
+	<div class="presborder">
+		
+	</div>-->
+	
+	<p> <span class="presimage">  <img src="images/luca.jpg" alt="" width="200" height="200"> </span> <h1> Luca Ganassali </h1> </p> 
+	
+
+<!-- HOME -->
+	<p> Welcome to my personal webpage! <br/>
+	 </p>
+		
+
+	<h2> About me </h2>
+	
+	<p>I am a Ph.D. student under the supervision of <a href="https://www.msr-inria.fr/researchers/laurent-massoulie"/>Laurent Massoulié</a> 
+	and <a href="https://www.di.ens.fr/~lelarge/">Marc Lelarge</a>. I work at <a href="https://www.inria.fr/centre/paris">INRIA Paris</a>, in the 
+	<a href="https://www.di.ens.fr/dyogene/">DYOGENE</a> team, which is a joint team between INRIA Paris and <a href="https://www.di.ens.fr/"> ENS Paris</a>.<br/>
+	<p>My research interests lie mainly within statistics, probability theory, graph theory and machine learning. More specifically, I'm currently looking at
+	 inference problems in graphs and matrices, such as graph alignment.
+	 For these problems, several approaches may be followed: analyzing rigorously existing
+	algorithms based on random models to determine the regimes in which they may suceed, look at the information-theoretical and computational thresholds, 
+	design and propose new algorithms that explore new regimes. Another current topic I'm interested in is that of epidemiology on graphs.
+	</p>
+	
+	
+	<h2>Contact</h2>
+	<p><img src="images/email_adress.png" alt="emailaddress" width="170" height="25"><br/>
+	INRIA, 3rd floor, Office C321, <br/>
+	2 rue Simone Iff,<br/>
+	75012 Paris.</p>
+	
+	
+	<h2>Publications and preprints</h2>
+	<ul>
+
+	<li><p>M. Akian, L.Ganassali, S. Gaubert, L. Massoulié. <b>Probabilistic and mean-field model of COVID-19 epidemics with user mobility and contact tracing</b>, 2020, <i>submitted.</i> <br/> 
+	[<a href="https://arxiv.org/abs/2009.05304">arXiv</a>] 
+	<div class="abstract"> <b>Short abstract:</b> 
+	We propose a detailed discrete-time model of COVID-19 epidemics coming in two flavours, mean-field and probabilistic. The main contribution lies in several extensions of the basic model that capture i) user mobility - distinguishing routing, i.e. change of residence, from commuting, i.e. daily mobility - and ii) contact tracing procedures. We confront this model to public data on daily hospitalizations, and discuss its application as well as underlying estimation procedures.
+	</div>
+	
+	</p>
+	</li>
+	
+	<li><p>L.Ganassali, L. Massoulié. <b>From tree matching to sparse graph alignment</b>, 2020, <i>in Proceedings of Thirty Third Conference on Learning Theoryy (COLT) 2020.</i> <br/> 
+	[<a href="https://arxiv.org/abs/2002.01258">arXiv</a>] [<a href="http://proceedings.mlr.press/v125/ganassali20a.html">PMLR</a>] 
+	<div class="abstract"> <b>Short abstract:</b> 
+	In this paper we consider alignment of sparse graphs, for which we introduce the Neighborhood Tree Matching Algorithm (NTMA). For correlated 
+	Erdős-Rényi random graphs, we prove that the algorithm returns -- in polynomial time -- a positive fraction of correctly matched vertices, 
+	and a vanishing fraction of mismatches. This result holds with average degree of the graphs in O(1) and correlation parameter s that can be 
+	bounded away from 1, conditions under which random graph alignment is particularly challenging. As a byproduct of the analysis we introduce a 
+	matching metric between trees and characterize it for several models of correlated random trees.
+	</div>
+	
+	</p>
+	</li>
+	
+	<li><p> L.Ganassali, M. Lelarge, L. Massoulié. <b>Spectral alignment of correlated Gaussian random matrices</b>, 2019, <i>to appear in Journal of Applied Probability.</i> <br/> [<a href="https://arxiv.org/abs/1912.00231">arXiv</a>] 
+	<div class="abstract"> <b>Short abstract:</b> 
+	In this paper we analyze a simple method (EIG1) for the problem of matrix alignment: given A and B, we 
+	compute two leading eigenvectors of A and B. The algorithm returns a permutation that aligns these vectors (up to their sign).
+	We analyze this algorithm in a standard Wigner model, and show a 0-1 law, that is a threshold on the signal-to-noise ratio above which under which the EIG1 method recovers 
+	all but a vanishing part of the underlying permutation, and under which this algorithm cannot recover more than a vansihing proportion of correct matches. This result gives an 
+	understanding of the simplest and fastest spectral method for matrix alignment (or complete weighted graph alignment), and involves proof methods and 
+	techniques which could be of independent interest.
+	</div>
+	</p>
+	</li>
+
+	
+	</ul>
+	
+	<h2>Conferences, workshops</h2>
+	<ul>
+	<li><p> Conference on Learning Theory (<a href="https://www.colt2020.org/">COLT</a>) 9-12 July 2020. <br/></p>
+	</li>
+	<li><p> <a href="https://conferences.cirm-math.fr/2155.html">Spectra, Algorithms and Random Walks on Random Networks</a>, CIRM, Luminy, 13-17 January 2020. </p>
+	</li>
+	<li><p> <a href="https://www.imo.universite-paris-saclay.fr/~giraud/Orsay/NetworkingDays.html">Networking days</a>, Orsay, 23 October 2019. </p>
+	</li>
+	</ul>
+	
+	<h2>Slides, teaching, misc.</h2>
+	<ul>
+	<!-- <li><p> The <a href="pdfs/020420_IT_limits_for_GA.pdf">slides</a> of a talk about <b>Information-Theoretical thresholds for (exact) graph alignment</b>, 
+	and a digression about the analysis of the MAP estimator.</p> -->
+	</li>
+	<li><p>The <a href="pdfs/250620_From_tree_matching_to_sparse_graph_alignment.pdf">slides</a> of a presentation about <b>sparse graph alignment</b>, 
+	at the Dyogene team seminar in June 2020.<br/></p></li>
+	
+	<li><p>Tutoring for the <a href = "https://moodle.polytechnique.fr/course/view.php?id=6101">MAP361</a> course at Ecole Polytechnique, Spring 2020: some revision exercices (in French) about
+	<a href="pdfs/MAP361T_feuille1.pdf">Borel-Cantelli lemma</a>, <a href="pdfs/MAP361T_feuille2.pdf">Convergence of random variables</a>,
+	and <a href="pdfs/MAP361T_feuille3.pdf">Estimation and CLT</a>.<br/></p></li>
+	</ul>
+	
+	
+	
+</body>
+</html>
