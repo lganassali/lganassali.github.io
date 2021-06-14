@@ -22,7 +22,7 @@
 		
 	</div>-->
 	
-	<p> <span class="presimage">  <img src="images/luca.jpeg" alt="" width="290" height="340"> </span> <h1> Luca Ganassali </h1> </p> 
+	<p> <span class="presimage">  <img src="images/luca.jpeg" alt="" width="300" height="348"> </span> <h1> Luca Ganassali </h1> </p> 
 	
 
 <!-- HOME -->
@@ -38,15 +38,13 @@
 	  Prior to that, I gratued from Ecole Polytechnique in 2018 and got a master degree from Université Paris-Saclay in Probability and Statistics in 2019.
 	  
 	<p>My research interests lie mainly within statistics, probability theory, graph theory and machine learning. More specifically, I'm currently looking at
-	  inference problems in graphs and matrices, such as graph alignment. For these problems, I'm interested in investigating the information-theoretical and computational thresholds, as well as designing and analyzing new algorithms on random instances to give a better understanding of the regimes in which they may suceed. </p>
-	
-	<p> Other current topics I'm interested in are epidemiology on graphs, opinion exchange dynamics and graph neural networks.
+	 inference problems in graphs and matrices, such as graph alignment. For these problems, I'm interested in investigating the information-theoretical and computational thresholds, as well as designing and analyzing new algorithms on random instances to give a better understanding of the regimes in which they may suceed. 
+	 Other current topics I'm interested in are epidemiology on graphs, opinion exchange dynamics and graph neural networks.
 	</p>
 
-	<br/>
-	<br/>
 	 <br/>
 	 <br/>
+	
 	
 	<h2>Contact</h2>
 	<p><img src="images/email_adress.png" alt="emailaddress" width="170" height="25"><br/>
