@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Luca Ganassali</title>
+
+  <style>
+    :root {
+      --accent: #2f6df6;
+      --text: #1d1d1f;
+      --muted: #6b7280;
+      --bg: #ffffff;
+      --surface: #f9fafb;
+      --maxw: 960px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--text); background: var(--bg); }
+
+    .hero {
+      position: relative;
+      height: 32vh;
+      min-height: 200px;
+      background-image: url('images/orsay.jpg'); 
+      background-size: cover;
+      background-position: center;
+      display: grid;
+      place-items: center;
+      color: white;
+      text-align: center;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.65));
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero h1 { margin: 0; font-size: clamp(1.8rem, 1.5rem + 1.6vw, 3rem); }
+
+    .nav {
+      background: #0f172a;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,.08);
+    }
+    .nav-inner {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .6rem 1rem;
+      gap: 1rem;
+    }
+    .brand { font-weight: 700; }
+    .menu { display: flex; flex-wrap: wrap; gap: .75rem; }
+    .menu a { text-decoration: none; color: white; padding: .45rem .65rem; border-radius: 999px; font-size: .95rem; transition: background .15s ease; }
+    .menu a:hover, .menu a:focus { background: rgba(255,255,255,.14); }
+
+    main { max-width: var(--maxw); margin: 0 auto; padding: 2.2rem 1.2rem 3.2rem; }
+    h2 { margin-top: 0; }
+    .card {
+      background: var(--surface);
+      border-radius: 1.1rem;
+      padding: 1.5rem;
+      box-shadow: 0 14px 28px -14px rgba(0,0,0,.12);
+    }
+    p { line-height: 1.65; }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1rem;
+      text-align: center;
+      font-size: .85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1></h1>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">Luca Ganassali</div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="pdfs/CV_latest.pdf" target="_blank">CV</a>
+        <a href="research.html">Research</a>
+        <a href="talks.html">Talks &amp; events</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="music.html">Music</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="card">
+      <h2>Contact</h2>
+      <p><strong>📨 Email address:</strong> firstname.lastname@universite-paris-saclay.fr</p>
+      <p><strong>🏠 Physical address:</strong><br />
+LMO Bureau 3G3 <br />
+Université Paris Saclay <br />
+Bâtiment 307, rue Michel Magat <br />
+Faculté des Sciences d’Orsay <br />
+F-91405 Orsay Cedex
+<br />
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 — Luca Ganassali · Contact
+  </footer>
+</body>
+</html>

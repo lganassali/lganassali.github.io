@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Music — Luca Ganassali</title>
+
+  <style>
+    :root {
+      --accent: #2f6df6;
+      --text: #1d1d1f;
+      --muted: #6b7280;
+      --bg: #ffffff;
+      --surface: #f9fafb;
+      --maxw: 960px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--text); background: var(--bg); }
+
+    .hero {
+      position: relative;
+      height: 32vh;
+      min-height: 200px;
+      background-image: url('images/piano.png'); 
+      background-size: cover;
+      background-position: center;
+      display: grid;
+      place-items: center;
+      color: white;
+      text-align: center;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.65));
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero h1 { margin: 0; font-size: clamp(1.8rem, 1.5rem + 1.6vw, 3rem); }
+
+    .nav {
+      background: #0f172a;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,.08);
+    }
+    .nav-inner {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .6rem 1rem;
+      gap: 1rem;
+    }
+    .brand { font-weight: 700; }
+    .menu { display: flex; flex-wrap: wrap; gap: .75rem; }
+    .menu a { text-decoration: none; color: white; padding: .45rem .65rem; border-radius: 999px; font-size: .95rem; transition: background .15s ease; }
+    .menu a:hover, .menu a:focus { background: rgba(255,255,255,.14); }
+
+    main { max-width: var(--maxw); margin: 0 auto; padding: 2.2rem 1.2rem 3.2rem; }
+    h2 { margin-top: 2rem; }
+    ul { margin: .5rem 0 1.5rem; padding-left: 1.2rem; }
+    ul.sublist { list-style-type: "- "; margin-left: 1.5rem; }
+    li, p { line-height: 1.65; }
+    li p { margin: .4rem 0; }
+    em { font-style: italic; }
+    .card {
+      background: var(--surface);
+      border-radius: 1.1rem;
+      padding: 1.5rem;
+      box-shadow: 0 14px 28px -14px rgba(0,0,0,.12);
+      margin-bottom: 2rem;
+    }
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1rem;
+      text-align: center;
+      font-size: .85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Music</h1>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">Luca Ganassali</div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="pdfs/CV_latest.pdf" target="_blank">CV</a>
+        <a href="research.html">Research</a>
+        <a href="talks.html">Talks &amp; events</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="music.html">Music</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+<h3>This page is under construction.</h3>
+
+<!--    <section class="card">
+      <h2>About me</h2>
+      <p>I am a pianist and composer from Annecy, France. I started piano at age five with Claudine Boymond and began composing at 13 with Sophie Lacaze and Ludovic Thirvaudey at the Geneva Conservatory. In 2019 I joined the Conservatoire of the 15th arrondissement of Paris, earning my CEM in piano in 2022 and continuing composition studies with Carlos de Castellarnau, and more recently with Jean Gobinet at the American School of Modern Music. My musical inspirations stem from European Romanticism, French modernism (Ravel, Fauré, Debussy, Lili Boulanger), American musical theatre, jazz, and pop. I compose for piano, chamber ensembles, string orchestra, and brass ensembles, aiming for music that is figurative, eclectic, and accessible. I am particularly interested in music for movies.</p>
+      <p><a href="https://soundcloud.com/lucaganassali" target="_blank">Listen on SoundCloud</a></p>
+    </section>
+
+    <h2>Selected compositions</h2>
+
+    <h3>Music for movies</h3>
+    <ul class="sublist">
+      <li><p><a href="movies/Les_Disparus.mp4" target="_blank">Les disparus</a></p></li>
+      <li><p><a href="movies/Bon_Voyage.mp4" target="_blank">Bon voyage</a></p></li>
+      <li><p><a href="movies/Va_t_en.mp4" target="_blank">Va-t-en</a>  (Best soundtrack award, ESRA)</p></li>
+      <li><p><a href="movies/Des_Bouts_de_Riviere.mp4" target="_blank">Des bouts de rivière</a></p></li>
+      <li><p><a href="movies/Isolats.mp4" target="_blank">Isolats</a></p></li>
+    </ul>
+
+    <h3>Concert works</h3>
+    <ul class="sublist">
+<li><p><a href="concerts/Heures_de_Paris.mp3" target="_blank">A Nutshell's Odyssey</a></p></li>
+      <li><p><a href="concerts/Heures_de_Paris.mp3" target="_blank">Heures de Paris</a></p></li>
+      <li><p><a href="concerts/Flanerie_d_un_nouveau_printemps.mp3" target="_blank">Flânerie d'un nouveau printemps</a></p></li>
+      <li><p><a href="concerts/Prelude_de_la_Suite_d_Enfance.mp3" target="_blank">Prélude de la suite d'enfance</a></p></li>
+    </ul>
+
+    <h2>Piano</h2>
+    <ul class="sublist">
+      <li><p><a href="piano/Rhapsody_in_Blue.mp3" target="_blank">Rhapsody in Blue</a></p></li>
+      <li><p><a href="piano/Faure.mp3" target="_blank">Fauré</a></p></li>
+      <li><p><a href="piano/Poulenc.mp3" target="_blank">Poulenc</a></p></li>
+      <li><p><a href="piano/Lili_Boulanger.mp3" target="_blank">Lili Boulanger</a></p></li>
+    </ul>
+
+  </main>
+-->
+  <footer>
+    © 2026 — Luca Ganassali 
+  </footer>
+</body>
+</html>

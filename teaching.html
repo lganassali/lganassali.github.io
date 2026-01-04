@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teaching — Luca Ganassali</title>
+
+  <style>
+    :root {
+      --accent: #2f6df6;
+      --text: #1d1d1f;
+      --muted: #6b7280;
+      --bg: #ffffff;
+      --surface: #f9fafb;
+      --maxw: 960px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--text); background: var(--bg); }
+
+    .hero {
+      position: relative;
+      height: 32vh;
+      min-height: 200px;
+      background-image: url('images/orsay.jpg'); 
+      background-size: cover;
+      background-position: center;
+      display: grid;
+      place-items: center;
+      color: white;
+      text-align: center;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.65));
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero h1 { margin: 0; font-size: clamp(1.8rem, 1.5rem + 1.6vw, 3rem); }
+
+    .nav {
+      background: #0f172a;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,.08);
+    }
+    .nav-inner {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .6rem 1rem;
+      gap: 1rem;
+    }
+    .brand { font-weight: 700; }
+    .menu { display: flex; flex-wrap: wrap; gap: .75rem; }
+    .menu a { text-decoration: none; color: white; padding: .45rem .65rem; border-radius: 999px; font-size: .95rem; transition: background .15s ease; }
+    .menu a:hover, .menu a:focus { background: rgba(255,255,255,.14); }
+
+    main { max-width: var(--maxw); margin: 0 auto; padding: 2.2rem 1.2rem 3.2rem; }
+    h2 { margin-top: 2rem; }
+    ul { margin: .5rem 0 1.5rem; padding-left: 1.2rem; }
+    ul.sublist { list-style-type: "- "; margin-left: 1.5rem; }
+    li, p { line-height: 1.65; }
+    li p { margin: .4rem 0; }
+    em { font-style: italic; }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1rem;
+      text-align: center;
+      font-size: .85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Teaching</h1>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">Luca Ganassali</div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="pdfs/CV_latest.pdf" target="_blank">CV</a>
+        <a href="research.html">Research</a>
+        <a href="talks.html">Talks &amp; events</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="music.html">Music</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <h2>Université Paris-Saclay</h2>
+    <ul>
+      <li><b>2025-2026: <em>Mathematical statistics — M1 Mathématiques Fondamentales</em></b>
+        <ul class="sublist">
+          <li><p><a href="slides/M1MF_LectureNotes.pdf" target="_blank">Lecture notes</a> (english)</p></li>
+<li><p>Recueil d'exercices (français) : <a href="docs/M1MF_Exos.pdf" target="_blank">sujets</a> | <a href="docs/M1MF_Exos_Corr.pdf" target="_blank">corrigés</a></p></li> 
+ </ul>
+      </li>
+
+      <li><b>2025-2026: <em>Statistiques (STA1) — ENSTA & M1 MathsAppli</em></b>
+        <ul class="sublist">
+          <li><p>Cours I. <em>Rappels de statistiques : estimation, tests et intervalles de confiance</em>. [<a href="slides/STA1_Cours_1.pdf" target="_blank">slides</a>, <a href="tds/STA1_TD1.pdf" target="_blank">TD</a>, <a href="tds/STA1_TD1_corr.pdf" target="_blank">corrigé</a>]</p></li>
+          <li><p>Cours II. <em>Information de Fisher, estimation par maximum de vraisemblance</em>. [<a href="slides/STA1_Cours_2.pdf" target="_blank">slides</a>, <a href="tds/STA1_TD2.pdf" target="_blank">TD</a>, <a href="tds/STA1_TD2_corr.pdf" target="_blank">corrigé</a>]</p></li>
+          <li><p>Cours III. <em>Théorèmes asymptotiques, théorème de Neyman-Pearson</em>. [<a href="slides/STA1_Cours_3.pdf" target="_blank">slides</a>, <a href="tds/STA1_TD3.pdf" target="_blank">TD</a>, <a href="tds/STA1_TD3_corr.pdf" target="_blank">corrigé</a>]</p></li>
+          <li><p>Cours IV. <em>Voyage en pays Gaussien</em>. [<a href="slides/STA1_Cours_4.pdf" target="_blank">slides</a>, <a href="tds/STA1_TD4.pdf" target="_blank">TD</a>, <a href="tds/STA1_TD4_corr.pdf" target="_blank">corrigé</a>]</p></li>
+          <li><p>Cours V. <em>Le modèle linéaire</em>. [<a href="slides/STA1_Cours_5.pdf" target="_blank">slides</a>, <a href="https://app.wooclap.com/SJRLHC/" target="_blank">quizz</a>, <a href="tds/STA1_TD5.pdf" target="_blank">TD</a>, <a href="tds/STA1_TD5_corr.pdf" target="_blank">corrigé</a>, <a href="exams/STA1_Exam.pdf" target="_blank">exam</a>, <a href="exams/STA1_Exam_Corr.pdf" target="_blank">exam corrigé</a>]</p></li>
+          <li><p>Cours VI. <em>Le modèle linéaire, suite et fin</em>. [<a href="slides/STA1_Cours_6.pdf" target="_blank">slides</a>, <a href="https://app.wooclap.com/ODIMZJ/" target="_blank">quizz</a>, <a href="tds/STA01_TD6.pdf" target="_blank">TD</a>, <a href="tds/STA01_TD6_corr.pdf" target="_blank">corrigé</a>]</p></li>
+        </ul>
+      </li>
+
+      <li><b>2025-2026: <em>Introduction à la modélisation statistique (première partie) — M1 Maths&IA</em></b>
+<ul class="sublist">
+              <li><p><a href="docs/M1_MStats_Resume.pdf" target="_blank">Résumé du cours</a></p></li>
+              <li><p>Recueil d'exercices : <a href="docs/M1_MStats_Exos.pdf" target="_blank">sujets</a> | <a href="docs/M1_MStats_Exos_Corr.pdf" target="_blank">corrigés</a></p></li> 
+                            <li><p>TP 1 : <a href="docs/M1_MStats_TP1.zip" target="_blank">sujet</a> | <a href="docs/M1_MStats_TP1_corr.zip" target="_blank">corrigé</a></p></li>
+              <li><p>TP 2 : <a href="docs/M1_MStats_TP2.zip" target="_blank">sujet</a> | <a href="docs/M1_MStats_TP2_corr.zip" target="_blank">corrigé</a></p></li>
+              <li><p>Partiel 2025-2026 : <a href="docs/M1_MStats_Exam_2025_2026.pdf" target="_blank">sujet</a> | <a href="docs/M1_MStats_Exam_2025_2026.pdf" target="_blank">corrigé</a> </p></li>
+              <li><p>Partiel 2024-2025 : <a href="docs/M1_MStats_Exam_2025_2026.pdf" target="_blank">sujet</a> | <a href="docs/M1_MStats_Exam_2025_2026.pdf" target="_blank">corrigé</a> </p></li>
+            </ul>
+
+</li>
+
+    </ul>
+
+<h2>Former teaching</h2>
+<ul>
+  <li><b>Spring 2023: <em>Lecturer, Data Driven Business Analytics</em>, EPFL — Bachelor 3rd year.</b></li>
+
+  <li><b>2021-2022: <em>TA, Statistics and Probability</em>, Université de Paris.</b>
+    <ul class="sublist">
+      <li><p>Spring 2022, Spring 2021: <em>Statistics (MA1BY020)</em>, master's degree (1st year)</p></li>
+      <li><p>Fall 2021: <em>Probability (MT15Y030)</em>, bachelor's degree (3rd year)</p></li>
+      <li><p>Spring 2021: <em>Statistics and numerical simulations (MA16Y020)</em>, bachelor's degree (3rd year)</p></li>
+    </ul>
+  </li>
+
+  <li><b>2020: <em>Tutoring for the probability course (MAP361)</em>, École Polytechnique.</b></li>
+</ul>
+
+  </main>
+
+  <footer>
+    © 2026 — Luca Ganassali
+  </footer>
+</body>
+</html>

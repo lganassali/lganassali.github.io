@@ -1,266 +1,201 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171285399-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page — Luca Ganassali</title>
 
-  gtag('config', 'UA-171285399-1');
-</script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171285399-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-171285399-1');
+  </script>
 
+  <style>
+    :root {
+      --accent: #2f6df6;
+      --text: #1d1d1f;
+      --muted: #6b7280;
+      --bg: #ffffff;
+      --surface: #f9fafb;
+      --maxw: 960px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--text); background: var(--bg); }
 
-	<title>Luca Ganassali</title>
-	<meta charset = "utf-8"/>
-	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+    /* HERO (bandeau image paysage) */
+    .hero {
+      position: relative;
+      height: 42vh;
+      min-height: 260px;
+      background-image: url('images/orsay.jpg'); 
+      background-size: cover;
+      background-position: center;
+      display: grid;
+      place-items: center;
+      color: white;
+      text-align: center;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.65));
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      margin: 0 0 .25rem 0;
+      font-size: clamp(1.8rem, 1.5rem + 1.6vw, 3rem);
+      letter-spacing: .02em;
+    }
+    .hero p { margin: 0; font-size: 1.05rem; opacity: .95; }
+
+    /* NAV */
+    .nav {
+      background: #0f172a;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,.08);
+    }
+    .nav-inner {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .6rem 1rem;
+      gap: 1rem;
+    }
+    .brand { font-weight: 700; letter-spacing: .02em; }
+    .menu { display: flex; flex-wrap: wrap; gap: .75rem; }
+    .menu a {
+      text-decoration: none;
+      color: white;
+      padding: .45rem .65rem;
+      border-radius: 999px;
+      font-size: .95rem;
+      transition: background .15s ease;
+    }
+    .menu a:hover, .menu a:focus { background: rgba(255,255,255,.14); }
+
+    /* LAYOUT */
+    main { max-width: var(--maxw); margin: 0 auto; padding: 2.2rem 1.2rem 3.2rem; }
+    section { margin-bottom: 2.8rem; }
+    h2 { margin: 0 0 .75rem; font-size: 1.35rem; }
+    p { line-height: 1.65; }
+    .card {
+      background: var(--surface);
+      border-radius: 1.1rem;
+      padding: 1.25rem 1.4rem;
+      box-shadow: 0 14px 28px -14px rgba(0,0,0,.12);
+    }
+    ul { margin: .5rem 0 0; padding-left: 1.1rem; }
+    li { margin-bottom: .45rem; }
+    a { color: var(--accent); }
+    a:hover { text-decoration: underline; }
+
+    .avatar {
+      width: 105px;
+      height: 105px;
+      border-radius: 999px;
+      object-fit: cover;
+      border: 3px solid rgba(255,255,255,.85);
+      box-shadow: 0 8px 22px rgba(0,0,0,.18);
+      margin-bottom: .6rem;
+    }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1rem; 
+      text-align: center; 
+      font-size: .85rem; 
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
-<!-- BORDER 
-	<div class="presborder">
-		
-	</div>-->
-	
-	<p> <span class="presimage">  <img src="images/luca.jpeg" alt="" width="290" height="340"> </span> <h1> Luca Ganassali </h1> </p> 
-	
 
-<!-- HOME -->
-		
-	<h2>About</h2>
-	
-<p>I am an Assistant Professor (Maître de Conférences) at the <a href="https://www.imo.universite-paris-saclay.fr/fr/" target="_blank">Department of Mathematics</a> of <a href="https://www.universite-paris-saclay.fr/" target="_blank">Université Paris-Saclay</a>. I am also a member of the Inria <a href="https://team.inria.fr/celeste/" target="_blank">Celeste</a> team. 
-</p>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="images/luca.jpeg" alt="Portrait" class="avatar" />
+      <h1>Luca Ganassali</h1>
+      <p>Assistant Professor — Université Paris‑Saclay</p>
+    </div>
+  </header>
 
-<p>
-Before that, I was a postdoctoral researcher at EPFL in <a href="https://www.epfl.ch/labs/ban/" target="_blank">BAN chair</a>. I did my PhD at <a href="https://www.inria.fr/centre/paris" target="_blank">Inria Paris</a> under the supervision of Laurent Massoulié and Marc Lelarge.
-</p>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">Luca Ganassali</div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="pdfs/CV_latest.pdf" target="_blank">CV</a>
+        <a href="research.html">Research</a>
+        <a href="talks.html">Talks &amp; events</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="music.html">Music</a>
+      </div>
+    </div>
+  </nav>
 
-<p>Here is a short  <b> <a href="pdfs/CV_latest.pdf" target="_blank">CV</a>. </b>
-</p>
-	
-	<h2>Contact</h2>
-<p>
-  <i>Email adress:</i> luca [dot] ganassali [at] universite-paris-saclay [dot] fr<br/>
-  
-  <br/>
-  
-<i>Physical adress:</i> Bâtiment 307, rue Michel Magat, Faculté des Sciences d’Orsay, Université Paris-Saclay, 91400 Orsay  <br/>
-</p>
-
-<p>
-
-<br/>
-
-<h2>Research interests</h2>
-	  
-<p>
-  I am currently working on:
-   </p>
-
-<p>  &nbsp; &nbsp;  - Algorithmic fairness and causality </p>
-
-<p>  &nbsp; &nbsp;  - Optimal transport for statistical learning </p>
-
-<p>  &nbsp; &nbsp;  - Statistical inference in graphs and matrices</p>
-
-<p>  &nbsp; &nbsp;  - Informational and computational thresholds for algorithms on random instances </p>
+  <main id="home">
+    <section class="card">
+      <h2>About</h2>
+      <p>
+        I am an Assistant Professor (Maître de Conférences) at the
+        <a href="https://www.imo.universite-paris-saclay.fr/fr/" target="_blank">Laboratoire de Mathématiques d'Orsay</a>
+        of <a href="https://www.universite-paris-saclay.fr/" target="_blank">Université Paris‑Saclay</a>, and a member of the Inria
+        <a href="https://team.inria.fr/celeste/" target="_blank">Celeste</a> team.
+      </p>
+      <p>
+        Previously, I was a postdoctoral researcher at EPFL (BAN chair) in 2022-2023. I completed my PhD in 2022 at Inria Paris, supervised by
+        Laurent Massoulié and Marc Lelarge.
+      </p>
+    <!--  <p><b><a id="cv" href="pdfs/CV_latest.pdf" target="_blank">Download my CV</a></b></p>-->
+    </section>
 
 
+    <section id="research">
+      <h2>Research interests</h2>
+      <ul>
+        <li>Fairness and causality</li>
+        <li>Optimal transport for statistical learning</li>
+        <li>Statistical inference in graphs and matrices</li>
+        <li>Information/computation thresholds on random instances</li>
+		<li>Opinion dynamics and misinformation in networks</li>
+      </ul>
+    </section>
 
-<br/>
+    <section id="news">
+      <h2>News</h2>
 
-  <h2>News:</h2>
+<p>📝 December 2025: a new preprint is out! Together with <b> <a href="https://sites.google.com/view/bertrandeven/accueil?pli=1" target="_blank">Bertrand Even</a></b>, we study the alignment of multiple correlated Gaussian graphs and reveal a statistical–computational gap. We first establish the informational threshold of the problem when the number of graphs <i>p</i> grows with <i>n</i>, the number of nodes. Interestingly, while a larger <i>p</i> initially helps the informational threshold, beyond a certain point it no longer eases the problem: the difficulty reduces to aligning a single graph with the parent graph. In the very large <i>p</i> regime, the partial and exact recovery thresholds no longer coincide (the all-or-nothing phase transition disappears). Finally, we show a computational barrier in the low-degree framework: when the correlation <i>ρ</i> is smaller than 1/polylog(<i>n,p</i>), low-degree polynomials can no longer extract signal, giving a clear picture of the stat–comp gap in this problem. <b><a href="https://arxiv.org/abs/2512.00610" target="_blank">See the preprint.</a></b></p>
 
-  <p>  - September 2025: a new preprint is out! Together with Lucas De Lara, we investigate the connections between statistical transport maps and causal inference. Our work compares three notions of multivariate monotone transport—cyclically monotone, quantile-preserving, and triangular monotone maps—deriving conditions for their equivalence and clarifying their structural properties. We then show how counterfactual reasoning in structural causal models can be formulated as a problem of selecting transport maps, highlighting when causal assumptions align with classical statistical transports.
-
-👉 <b> <a href="https://www.arxiv.org/abs/2509.16027" target="_blank">see the preprint</a></b></p>
-
-
-  <p>  - I am looking for a PhD student! Together with <b> <a href="https://echzhen.com/" target="_blank">Evgenii Chzhen</a></b>, we have a PhD offer at the interface between mathematical statistics and machine learning, namely about <i>Handling unfairness in data: modelling, detecting, and
+	<p>  🎓 I am looking for a PhD student. Together with <b> <a href="https://echzhen.com/" target="_blank">Evgenii Chzhen</a></b>, we have a PhD offer at the interface between mathematical statistics and machine learning, namely about <i>Handling unfairness in data: modelling, detecting, and
 debiasing</i>. Have a look at the<b> <a href="pdfs/PHD_project.pdf" target="_blank">PhD proposal</a></b>. Students are encouraged to apply by email.</p>
 
-<!--
-  <p>  - January 2025: Together with Matteo d'Achille, we propose a Master 1 'TER' research subject (in French) for Orsay students, entitled  "Matching de nuages de points aléatoires: étude combinatoire, probabiliste et informationnelle". The subject can be found <b> <a href="pdfs/TER_M1_2025.pdf" target="_blank">here.</a> </b> Students from Orsay are encouraged to apply by email before the end of February 2025.</p>-->
+      <p>📝 September 2025: a new preprint is out! Together with Lucas De Lara, we investigate the connections between statistical transport maps and causal inference. Our work compares three notions of multivariate monotone transport—cyclically monotone, quantile-preserving, and triangular monotone maps—deriving conditions for their equivalence and clarifying their structural properties. We then show how counterfactual reasoning in structural causal models can be formulated as a problem of selecting transport maps, highlighting when causal assumptions align with classical statistical transports. <b> <a href="https://www.arxiv.org/abs/2509.16027" target="_blank">See the preprint. </a></b>
+      </p>
+ </section>
 
-<!--<p>  - December 4th-5th 2024: I will be participating to <a href="https://neuripsinparis.github.io/neurips2024paris/" target="_blank"><b>NeurIPS@Paris 2024</b></a>. I'll be presenting our recent work (joint with Mathieu, Jakob and Laurent), <i>Aligning Embeddings and Geometric Random Graphs: Informational Results and Computational Approaches for the Procrustes-Wasserstein Problem</i>. Check out the paper 
- <a href="https://arxiv.org/abs/2405.14532" target="_blank">here</a>! </p>-->
-	
-	 
-<!--<p>  - May 2024:  Our recent paper <i>On sample complexity of conditional independence testing with Von Mises estimator with application to causal discovery</i> with Fateme Jamshidi and Negar Kiyavash has been accepted at ICML24! You can check our paper  <a href="https://arxiv.org/abs/2310.13553" target="_blank">here</a>.  </p>-->
+    <section id="jobs">
+      <h2>Job offers</h2>
+	<p>  🎓 I am looking for a PhD student. Together with <b> <a href="https://echzhen.com/" target="_blank">Evgenii Chzhen</a></b>, we have a PhD offer at the interface between mathematical statistics and machine learning, namely about <i>Handling unfairness in data: modelling, detecting, and
+debiasing</i>. Have a look at the<b> <a href="pdfs/PHD_project.pdf" target="_blank">PhD proposal</a></b>. Students are encouraged to apply by email.</p>
+ </section>
 
-<p> - I recently gave an introductionary talk at IHES about <i>Unsupervised Alignment of Graphs and Embeddings: Fundamental Limits and Computational Methods.</i> [<a href="https://www.youtube.com/watch?v=8IzO3CudAmo" target="_blank">Youtube link</a>].   </p>
-
-
-<br/>
-
-
-
-	  <h2>Publications and preprints</h2>
-	 <i>(<a href="https://scholar.google.com/citations?user=afDIpsYAAAAJ&hl=en" target="_blank">Google Scholar</a>, <a href="https://arxiv.org/search/?query=ganassali+luca&searchtype=all&source=header" target="_blank">arXiv</a>) </i>
-	  
-	 							   
-	 <ul>
-	
-<li><p> B. Even, L. Ganassali. <b>Statistical-computational gap in multiple Gaussian graph alignment</b>, 2025, <i>to appear.</i>  <br/> 
- 
-  
-  </p>
-  </li> 
-	
-<li><p> L. De Lara, L. Ganassali. <b>What is a good matching of probability measures? A counterfactual lens on transport maps</b>, 2025, <i>submitted.</i>  <br/> 
-  [<a href="https://www.arxiv.org/abs/2509.16027" target="_blank">arXiv</a>] 
-  
-  </p>
-  </li> 
-
-<li><p> M. Even, L. Ganassali,  J. Maier, L. Massoulié. <b>Aligning Embeddings and Geometric Random Graphs: Informational Results and Computational Approaches for the Procrustes-Wasserstein Problem</b>, 2024, <i>NeurIPS 2024.</i>  <br/> 
-   [<a href="https://neurips.cc/virtual/2024/poster/96674" target="_blank">NeurIPS presentation</a>] [<a href="https://arxiv.org/abs/2405.14532" target="_blank">arXiv</a>] 
-  
-  </p>
-  </li> 
-
-	   
-<li><p> F. Jamshidi, L. Ganassali,  N. Kiyavash. <b>On sample complexity of conditional independence testing with Von Mises estimator with application to causal discovery</b>, 2023, <i>ICML 2024.</i>  <br/> 
- [<a href="https://proceedings.mlr.press/v235/jamshidi24a.html" target="_blank">PMLR</a>] [<a href="https://arxiv.org/abs/2310.13553" target="_blank">arXiv</a>] 
-  
-  </p>
-  </li> 
-
-<li><p> S. Akbari, L. Ganassali,  N. Kiyavash. <b>Learning causal graphs via monotone triangular transport maps</b>, 2023, <i>NeurIPS 2023 Workshop on Optimal Transport and Machine Learning.</i>  <br/> 
-  [<a href="https://arxiv.org/abs/2305.18210" target="_blank">arXiv</a>] 
-  
-  </p>
-  </li>    
-	   
-<li><p> L. Ganassali,  L. Massoulié, G. Semerjian. <b>Statistical limits of correlation detection in trees</b>, 2022, <i>Annals of Applied Probability.</i>  <br/>
-    [<a href="http://dx.doi.org/10.1214/23-AAP2048" target="_blank">journal</a>] [<a href="https://arxiv.org/abs/2209.13723" target="_blank">arXiv</a>] 
-	    
-	</p>
-	</li>																			
-
-<li><p> L. Ganassali. <b>The graph alignment problem: fundamental limits and efficient algorithms</b>, PhD dissertation, 2022.  <br/>
-    [<a href="pdfs/phd_manuscript.pdf" target="_blank">pdf</a>]  [<a href="https://arxiv.org/abs/2404.12418" target="_blank">arXiv</a>] 
-	</div>
-	
-	</p>
-	</li>
-
-	<li><p> L. Ganassali, M. Lelarge, L. Massoulié. <b>Correlation detection in trees for partial graph alignment</b>, 2021, <i>Annals of Applied Probability (short version: ITCS 2022).</i> <br/> 
-	[<a href="https://projecteuclid.org/journals/annals-of-applied-probability/volume-34/issue-3/Correlation-detection-in-trees-for-planted-graph-alignment/10.1214/23-AAP2020.full" target="_blank">journal</a>] [<a href="https://drops.dagstuhl.de/opus/volltexte/2022/15670/" target="_blank">ITCS (extended abstract)</a>] [<a href="https://arxiv.org/abs/2107.07623" target="_blank">arXiv</a>] 
-	
-	</p>
-	</li>
-
-	<li><p> L. Ganassali, M. Lelarge, L. Massoulié. <b>Impossibility of Partial Recovery in the Graph Alignment Problem</b>, 2021, <i>COLT 2021.</i> <br/> 
-	[<a href="http://proceedings.mlr.press/v134/ganassali21a.html" target="_blank">PMLR</a>] [<a href="http://www.learningtheory.org/colt2021/virtual/poster_1352.html" target="_blank">COLT presentation</a>] [<a href="https://arxiv.org/abs/2102.02685" target="_blank">arXiv</a>] 
-	
-	</p>
-	</li>
-
-	<li><p> L. Ganassali. <b>Sharp threshold for alignment of graph databases with Gaussian weights</b>, 2020, <i>Mathematical and Scientific Machine Learning (MSML21).</i> <br/> 
-	[<a href="https://proceedings.mlr.press/v145/ganassali22a.html" target="_blank">PMLR</a>] [<a href="https://www.youtube.com/watch?v=7F2wTfPORn4" target="_blank">MSML presentation</a>] [<a href="https://arxiv.org/abs/2010.16295" target="_blank">arXiv</a>] 	</p>
-	</li>
-
-	<li><p>M. Akian, L. Ganassali, S. Gaubert, L. Massoulié. <b>Probabilistic and mean-field model of COVID-19 epidemics with user mobility and contact tracing</b>, 2020, <i>preprint.</i> <br/> 
-	[<a href="https://arxiv.org/abs/2009.05304" target="_blank">arXiv</a>] 
-	
-	</p>
-	</li>
-	
-	<li><p>L. Ganassali, L. Massoulié. <b>From tree matching to sparse graph alignment</b>, 2020, <i>COLT 2020.</i> <br/> 
-	[<a href="http://proceedings.mlr.press/v125/ganassali20a.html" target="_blank">PMLR</a>] [<a href="http://www.learningtheory.org/colt2020/virtual/papers/paper_289.html" target="_blank">COLT presentation</a>] [<a href="https://arxiv.org/abs/2002.01258" target="_blank">arXiv</a>] 
-	
-	</p>
-	</li>
-	
-<li><p> L. Ganassali, M. Lelarge, L. Massoulié. <b>Spectral alignment of correlated Gaussian random matrices</b>, 2019, <i>Advances in Applied Probability.</i> <br/> [<a href="https://www.cambridge.org/core/journals/advances-in-applied-probability/article/spectral-alignment-of-correlated-gaussian-matrices/468F92C33622EC7F9A3FE97EB941602D" target="_blank">journal</a>]
-[<a href="https://arxiv.org/abs/1912.00231" target="_blank">arXiv</a>] 
-<!-- BORDER 
-	<div class="abstract"> <b>Short abstract:</b> 
-	In this paper we analyze a simple method (EIG1) for the problem of matrix alignment: given A and B, we 
-	compute two leading eigenvectors of A and B. The algorithm returns a permutation that aligns these vectors (up to their sign).
-	We analyze this algorithm in a standard Wigner model, and show a zero-one law, that is a threshold on the signal-to-noise ratio above which under which the EIG1 method recovers 
-	all but a vanishing part of the underlying permutation, and under which this algorithm cannot recover more than a vansihing proportion of correct matches. This result gives an 
-	understanding of the simplest and fastest spectral method for matrix alignment (or complete weighted graph alignment), and involves proof methods and 
-	techniques which could be of independent interest.
-</div>	
--->
-	</p>
-	</li>
-
-	
-	</ul>
-
-<br/>
-
-  <br/>
-
-
-
-<!-- BORDER 
-
-	<h2>Links to selected talks</h2>
-	<ul>
-
-
-	 <li><p> Workshop <a href="https://conferences.cirm-math.fr/2155.html" target="_blank">On Future Synergies for Stochastic and Learning Algorithms</a>, CIRM, Luminy, Sept. 27-Oct. 1, 2021. (<a href="pdfs/poster_CIRM_21.pdf" target="_blank">poster</a>) 
-	</li>
-	<li><p> Junior conference <a href="https://jps-2021.sciencesconf.org" target="_blank">Random networks and interacting particle systems</a> (remote), Sept. 6-10, 2021. (talk)  
-	</li>
-	<li><p> Conference on Learning Theory (<a href="http://learningtheory.org/colt2021/" target="_blank">COLT</a>) (remote), Aug. 15-19, 2021. (talk, <a href="pdfs/COLT2021_15mn.pdf" target="_blank">slides</a>, <a href="pdfs/poster_COLT21.pdf" target="_blank">poster</a>)
-	</li>
-	<li><p> Mathematical and Scientific Machine Learning (<a href="https://msml21.github.io/" target="_blank">MSML</a>) (remote), Aug. 16-19, 2021. (<a href="youtube.com/watch?v=7F2wTfPORn4" target="_blank">talk</a>) 
-	</li>
-	<li><p> Conference on Learning Theory (<a href="https://www.colt2020.org/" target="_blank">COLT</a>) (remote), Jul. 9-12, 2020. (<a href="https://www.youtube.com/watch?v=iZMvL4Ra-qE" target="_blank">talk</a>)
-	</li>
-	<li><p> Workshop <a href="https://conferences.cirm-math.fr/2155.html" target="_blank">Spectra, Algorithms and Random Walks on Random Networks</a>, CIRM, Luminy, Jan. 13-17, 2020. 
-	</li>
-	<li><p> <a href="https://www.imo.universite-paris-saclay.fr/~giraud/Orsay/NetworkingDays.html" target="_blank">Networking days</a>, Orsay, Oct. 23, 2019. (talk) 
-	</li>
-	</ul>
-
-<br/>
-
-
-	<h2>Reviewing</h2>
-	<ul>
-	<li><p> <b>Conferences:</b> ISIT 2021, COLT 2022, MSML 2022.</p>
-	</li>
-	<li><p> <b>Journals:</b> Journal of Machine Learning Research, Annals of Statistics.</p></li>
-	</ul>
-
-<br/>
-
--->	
-	<h2>Teaching</h2>
-	<ul>
-	
-	
-	<li><p> <b>2025-2026. Statistiques (STA1)</b>, ENSTA, M1 MathsAppli, Université Paris-Saclay. <a href="cours_STA1.html",target="_blank">Voir les slides et TDs</a>. </p></li>
-	
-	<li><p> <b>2025-2026. Introduction à la modélisation statistique</b>, M1 Maths&IA, Université Paris-Saclay. </p></li>
-
-<!-- BORDER 
-	<li><p> <b>Spring 2020:</b> Tutoring for the <a href = "https://moodle.polytechnique.fr/course/view.php?id=6101" target="_blank">MAP361</a> course at Ecole Polytechnique, some revision exercices (in french) about
-	<a href="pdfs/MAP361T_feuille1.pdf" target="_blank">Borel-Cantelli lemma</a>, <a href="pdfs/MAP361T_feuille2.pdf" target="_blank">Convergence of random variables</a>,
-	and <a href="pdfs/MAP361T_feuille3.pdf" target="_blank">Estimation and CLT</a>.<br/></p></li>
-
-	<li><p> <b>Spring 2021:</b>  TA for the <a href = "https://moodle.u-paris.fr/course/view.php?id=2309" target="_blank">MA16Y020</a> course:
-	    <i>Statistiques et simulations probabilistes</i>, L3,  Université de Paris. </p></li>
-
-	<li><p> <b>Spring 2021:</b> TA for the <a href = "https://moodle.u-paris.fr/course/view.php?id=6060" target="_blank">MA1BY020</a> course:
-  <i>Statistiques</i>, M1, Université de Paris. </p></li>
-
-	<li><p> <b>Fall 2021:</b> TA for the <a href = "https://moodle.u-paris.fr/course/view.php?id=6060" target="_blank">MT15Y030</a> course: <i>Probabilités</i>, L3, Université de Paris. Vous trouverez <a href="pdfs/exercices_supplementaires.pdf" target="_blank">ici</a> des exercices supplémentaires.
-
-	<li><p> <b>Spring 2022:</b> TA for the <a href = "https://moodle.u-paris.fr/course/view.php?id=6060" target="_blank">MA1BY020</a> course:
-  <i>Statistiques</i>, M1, Université de Paris. <a href="cours_TP_stats.html",target="_blank">Voir les TPs</a>. </p></li>
--->		
-	</ul>
-	
-
-	
+  <footer>
+    © 2026 — Luca Ganassali
+  </footer>
 </body>
 </html>

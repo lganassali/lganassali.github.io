@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research — Luca Ganassali</title>
+  <style>
+    :root {
+      --accent: #2f6df6;
+      --text: #1d1d1f;
+      --muted: #6b7280;
+      --bg: #ffffff;
+      --surface: #f9fafb;
+      --maxw: 960px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--text); background: var(--bg); }
+
+    .hero { position: relative; height: 32vh; min-height: 200px; background-image: url('images/talks.jpg'); background-size: cover; background-position: center; display: grid; place-items: center; color: white; text-align: center; }
+    .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.65)); }
+    .hero-content { position: relative; z-index: 1; }
+    .hero h1 { margin: 0; font-size: clamp(1.8rem, 1.5rem + 1.6vw, 3rem); }
+
+    .nav { background: #0f172a; color: white; position: sticky; top: 0; z-index: 50; box-shadow: 0 10px 15px -3px rgba(0,0,0,.08); }
+    .nav-inner { max-width: var(--maxw); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: .6rem 1rem; gap: 1rem; }
+    .brand { font-weight: 700; }
+    .menu { display: flex; flex-wrap: wrap; gap: .75rem; }
+    .menu a { text-decoration: none; color: white; padding: .45rem .65rem; border-radius: 999px; font-size: .95rem; transition: background .15s ease; }
+    .menu a:hover, .menu a:focus { background: rgba(255,255,255,.14); }
+
+    main { max-width: var(--maxw); margin: 0 auto; padding: 2.2rem 1.2rem 3.2rem; }
+    h2 { margin: 0 0 .75rem; }
+    h3 { margin: 1.8rem 0 .6rem;  }
+    .card { background: var(--surface); border-radius: 1.1rem; padding: 1.5rem; box-shadow: 0 14px 28px -14px rgba(0,0,0,.12); }
+    ul { margin: .4rem 0 0; padding-left: 1.1rem; }
+    li { margin-bottom: .7rem; }
+    p { line-height: 1.6; margin: .25rem 0; }
+    a { color: var(--accent); }
+
+    footer { border-top: 1px solid #e5e7eb; padding: 1rem; text-align: center; font-size: .85rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Talks &amp; events</h1>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">Luca Ganassali</div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="pdfs/CV_latest.pdf" target="_blank">CV</a>
+        <a href="research.html">Research</a>
+        <a href="talks.html">Talks &amp; events</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="music.html">Music</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Talks</h2>
+
+      <ul>
+        <!-- 2025 -->
+        <li><strong>Dec. 15–18, 2025</strong> — <i>IMS International Conference on Statistics and Data Science (ICSDS)</i>, Sevilla.</li>
+<li><strong>Dec. 2, 2025</strong> — <i>Blackboard ML Seminar</i>, ENS Lyon.</li>
+        <li><strong>Oct. 9, 2025</strong> — <i>SML‑MTP: Machine Learning in Montpellier</i>, Inria Montpellier.</li>
+        <li><strong>June 2–6, 2025</strong> — <i>Journées de Statistique</i>, Marseille.</li>
+        <li><strong>Apr. 14, 2025</strong> — <i>Séminaire parisien de Statistique</i>, Paris.</li>
+        <li><strong>Mar. 19, 2025</strong> — <i>PEPR IA Days</i>.</li>
+        <li><strong>Jan. 27–Feb. 7, 2025</strong> — <i>Workshop — Towards a Theory for Typical‑Case Algorithmic Hardness</i>, Les Houches.</li>
+
+        <!-- 2024 -->
+        <li><strong>Apr. 3, 2024</strong> — <i>9th Statistics & Computer Science Day for Data Science in Paris‑Saclay</i>, IHES, about "Unsupervised Alignment of Graphs and Embeddings: Fundamental Limits and Computational Methods
+" [<a href="docs/M1_MStats_Exam_2025_2026.pdf" target="_blank">see the video</a>].</li>
+        <li><strong>Feb. 28, 2024</strong> — <i>Séminaire de Modélisation Stochastique, LPSM</i>, Paris.</li>
+        <li><strong>Feb. 20, 2024</strong> — <i>3rd ASCAI Workshop</i>, Postdam.</li>
+
+        <!-- 2023 -->
+        <li><strong>June 28–30, 2023</strong> — <i>21st INFORMS Applied Probability Society Conference</i>, Nancy.</li>
+        <li><strong>Mar. 27–31, 2023</strong> — <i>Young European Probabilists (YEP) Workshop</i>, Eindhoven.</li>
+        <li><strong>Jan. 12, 2023</strong> — <i>Séminaire de Probabilités/Statistiques</i>, Institut de mathématique d'Orsay.</li>
+
+        <!-- 2022 -->
+        <li><strong>Nov. 15, 2022</strong> — <i>Séminaire de Probabilités</i>, Université d'Aix‑Marseille.</li>
+        <li><strong>May 23–27, 2022</strong> — <i>Theoretical Computer Science Spring School: Machine Learning</i>, CIRM, Marseille.</li>
+        <li><strong>Mar. 17, 2022</strong> — <i>CDM Seminar</i>, EPFL.</li>
+        <li><strong>Feb. 28–Mar. 1, 2022</strong> — <i>DACO Seminar</i>, ETH Zürich.</li>
+        <li><strong>Jan. 31–Feb. 3, 2022</strong> — <i>Innovations in Theoretical Computer Science (ITCS)</i>, Berkeley.</li>
+
+        <!-- 2021 -->
+        <li><strong>Dec. 9, 2021</strong> — <i>Stochastics Seminar</i>, Georgia Tech.</li>
+        <li><strong>Nov. 10, 2021</strong> — <i>Prairie Workshop</i>, Paris.</li>
+        <li><strong>Oct. 25–29, 2021</strong> — <i>Colloquium “Jeunes Probabilistes et Statisticiens”</i>, St‑Pierre d'Oléron.</li>
+        <li><strong>Sept. 27–Oct. 1, 2021</strong> — <i>Workshop “On Future Synergies for Stochastic and Learning Algorithms”</i>, Marseille.</li>
+        <li><strong>Sept. 6–10, 2021</strong> — <i>Junior conference: Random networks and interacting particle systems</i>, virtual.</li>
+        <li><strong>Aug. 16–19, 2021</strong> — <i>Mathematical and Scientific Machine Learning (MSML)</i>, EPFL.</li>
+        <li><strong>Aug. 15–19, 2021</strong> — <i>Conference on Learning Theory (COLT)</i>, virtual.</li>
+
+        <!-- 2020 -->
+        <li><strong>July 9–12, 2020</strong> — <i>Conference on Learning Theory (COLT)</i>, virtual.</li>
+        <li><strong>June 25, 2020</strong> — <i>Dyogene team seminar</i>, Inria Paris.</li>
+
+        <!-- 2019 -->
+        <li><strong>Oct. 23, 2019</strong> — <i>Networking Days</i>, Orsay.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Co‑organized events</h2>
+      <ul>
+        <li><strong>Oct. 20–24, 2025</strong> — Winter School on Causality and Explainable AI, SCAI, Jussieu, Paris.</li>
+        <li><strong>Aug. 25–26, 2025</strong> — Annual workshop: Causal Modelling and Inference, Institut Henri Poincaré, Paris.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 — Luca Ganassali</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research — Luca Ganassali</title>
+  <style>
+    :root {
+      --accent: #2f6df6;
+      --text: #1d1d1f;
+      --muted: #6b7280;
+      --bg: #ffffff;
+      --surface: #f9fafb;
+      --maxw: 960px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--text); background: var(--bg); }
+
+    .hero { position: relative; height: 32vh; min-height: 200px; background-image: url('images/orsay.jpg'); background-size: cover; background-position: center; display: grid; place-items: center; color: white; text-align: center; }
+    .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.65)); }
+    .hero-content { position: relative; z-index: 1; }
+    .hero h1 { margin: 0; font-size: clamp(1.8rem, 1.5rem + 1.6vw, 3rem); }
+
+    .nav { background: #0f172a; color: white; position: sticky; top: 0; z-index: 50; box-shadow: 0 10px 15px -3px rgba(0,0,0,.08); }
+    .nav-inner { max-width: var(--maxw); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: .6rem 1rem; gap: 1rem; }
+    .brand { font-weight: 700; }
+    .menu { display: flex; flex-wrap: wrap; gap: .75rem; }
+    .menu a { text-decoration: none; color: white; padding: .45rem .65rem; border-radius: 999px; font-size: .95rem; transition: background .15s ease; }
+    .menu a:hover, .menu a:focus { background: rgba(255,255,255,.14); }
+
+    main { max-width: var(--maxw); margin: 0 auto; padding: 2.2rem 1.2rem 3.2rem; }
+    h2 { margin: 0 0 .75rem; }
+    h3 { margin: 1.8rem 0 .6rem;  }
+    .card { background: var(--surface); border-radius: 1.1rem; padding: 1.5rem; box-shadow: 0 14px 28px -14px rgba(0,0,0,.12); }
+    ul { margin: .4rem 0 0; padding-left: 1.1rem; }
+    li { margin-bottom: .7rem; }
+    p { line-height: 1.6; margin: .25rem 0; }
+    a { color: var(--accent); }
+
+    footer { border-top: 1px solid #e5e7eb; padding: 1rem; text-align: center; font-size: .85rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Research</h1>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">Luca Ganassali</div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="pdfs/CV_latest.pdf" target="_blank">CV</a>
+        <a href="research.html">Research</a>
+        <a href="talks.html">Talks &amp; events</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="music.html">Music</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="publications">
+      <h2>Publications and preprints</h2>
+      <p>My publications and preprints can be found on my <a href="https://scholar.google.com/citations?user=afDIpsYAAAAJ&hl=en" target="_blank">Google Scholar</a> page, or on <a href="https://arxiv.org/search/?query=ganassali+luca&searchtype=all&source=header" target="_blank">arXiv</a>.</p>
+
+      <h3>2025</h3>
+      <ul>
+        <li><p>B. Even, L. Ganassali. <b>Statistical–computational gap in multiple Gaussian graph alignment</b>, <i>to appear.</i> [<a href="https://arxiv.org/abs/2512.00610" target="_blank">arXiv</a>] </p></li>
+        <li><p>L. De Lara, L. Ganassali. <b>What is a good matching of probability measures? A counterfactual lens on transport maps</b>, <i>submitted.</i> [<a href="https://www.arxiv.org/abs/2509.16027" target="_blank">arXiv</a>]</p></li>
+      </ul>
+
+      <h3>2024</h3>
+      <ul>
+        <li><p>M. Even, L. Ganassali, J. Maier, L. Massoulié. <b>Aligning Embeddings and Geometric Random Graphs: Informational Results and Computational Approaches for the Procrustes-Wasserstein Problem</b>, <i>NeurIPS 2024.</i> [<a href="https://neurips.cc/virtual/2024/poster/96674" target="_blank">NeurIPS presentation</a>] [<a href="https://arxiv.org/abs/2405.14532" target="_blank">arXiv</a>]</p></li>
+      </ul>
+
+      <h3>2023</h3>
+      <ul>
+        <li><p>F. Jamshidi, L. Ganassali, N. Kiyavash. <b>On sample complexity of conditional independence testing with Von Mises estimator with application to causal discovery</b>, <i>ICML 2024.</i> [<a href="https://proceedings.mlr.press/v235/jamshidi24a.html" target="_blank">PMLR</a>] [<a href="https://arxiv.org/abs/2310.13553" target="_blank">arXiv</a>]</p></li>
+        <li><p>S. Akbari, L. Ganassali, N. Kiyavash. <b>Learning causal graphs via monotone triangular transport maps</b>, <i>NeurIPS 2023 Workshop on Optimal Transport and Machine Learning.</i> [<a href="https://arxiv.org/abs/2305.18210" target="_blank">arXiv</a>]</p></li>
+      </ul>
+
+      <h3>2022</h3>
+      <ul>
+        <li><p>L. Ganassali, L. Massoulié, G. Semerjian. <b>Statistical limits of correlation detection in trees</b>, <i>Annals of Applied Probability.</i> [<a href="http://dx.doi.org/10.1214/23-AAP2048" target="_blank">journal</a>] [<a href="https://arxiv.org/abs/2209.13723" target="_blank">arXiv</a>]</p></li>
+        <li><p>L. Ganassali. <b>The graph alignment problem: fundamental limits and efficient algorithms</b>, PhD dissertation. [<a href="pdfs/phd_manuscript.pdf" target="_blank">pdf</a>] [<a href="https://arxiv.org/abs/2404.12418" target="_blank">arXiv</a>]</p></li>
+      </ul>
+
+      <h3>2021</h3>
+      <ul>
+        <li><p>L. Ganassali, M. Lelarge, L. Massoulié. <b>Correlation detection in trees for partial graph alignment</b>, <i>Annals of Applied Probability (short version published at ITCS 2022).</i> [<a href="https://projecteuclid.org/journals/annals-of-applied-probability/volume-34/issue-3/Correlation-detection-in-trees-for-planted-graph-alignment/10.1214/23-AAP2020.full" target="_blank">journal</a>] [<a href="https://drops.dagstuhl.de/opus/volltexte/2022/15670/" target="_blank">ITCS</a>] [<a href="https://arxiv.org/abs/2107.07623" target="_blank">arXiv</a>]</p></li>
+        <li><p>L. Ganassali, M. Lelarge, L. Massoulié. <b>Impossibility of Partial Recovery in the Graph Alignment Problem</b>, <i>COLT 2021.</i> [<a href="http://proceedings.mlr.press/v134/ganassali21a.html" target="_blank">PMLR</a>] [<a href="http://www.learningtheory.org/colt2021/virtual/poster_1352.html" target="_blank">COLT presentation</a>] [<a href="https://arxiv.org/abs/2102.02685" target="_blank">arXiv</a>]</p></li>
+      </ul>
+
+      <h3>2020</h3>
+      <ul>
+        <li><p>L. Ganassali. <b>Sharp threshold for alignment of graph databases with Gaussian weights</b>, <i>MSML 2021.</i> [<a href="https://proceedings.mlr.press/v145/ganassali22a.html" target="_blank">PMLR</a>] [<a href="https://www.youtube.com/watch?v=7F2wTfPORn4" target="_blank">MSML presentation</a>] [<a href="https://arxiv.org/abs/2010.16295" target="_blank">arXiv</a>]</p></li>
+        <li><p>M. Akian, L. Ganassali, S. Gaubert, L. Massoulié. <b>Probabilistic and mean-field model of COVID-19 epidemics with user mobility and contact tracing</b>, 2020, <i>preprint.</i> [<a href="https://arxiv.org/abs/2009.05304" target="_blank">arXiv</a>]</p></li>
+        <li><p>L. Ganassali, L. Massoulié. <b>From tree matching to sparse graph alignment</b>, <i>COLT 2020.</i> [<a href="http://proceedings.mlr.press/v125/ganassali20a.html" target="_blank">PMLR</a>] [<a href="http://www.learningtheory.org/colt2020/virtual/papers/paper_289.html" target="_blank">COLT presentation</a>] [<a href="https://arxiv.org/abs/2002.01258" target="_blank">arXiv</a>]</p></li>
+      </ul>
+
+      <h3>2019</h3>
+      <ul>
+        <li><p>L. Ganassali, M. Lelarge, L. Massoulié. <b>Spectral alignment of correlated Gaussian random matrices</b>, <i>Advances in Applied Probability.</i> [<a href="https://www.cambridge.org/core/journals/advances-in-applied-probability/article/spectral-alignment-of-correlated-gaussian-matrices/468F92C33622EC7F9A3FE97EB941602D" target="_blank">journal</a>] [<a href="https://arxiv.org/abs/1912.00231" target="_blank">arXiv</a>]</p></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 — Luca Ganassali · Research
+  </footer>
+</body>
+</html>
