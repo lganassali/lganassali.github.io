@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Luca Ganassali - Music</title>
 
-  <style>
+   <style>
     :root {
       --accent: #2f6df6;
       --text: #1d1d1f;
@@ -17,10 +17,11 @@
     * { box-sizing: border-box; }
     html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--text); background: var(--bg); }
 
+    /* HERO (bandeau image paysage) */
     .hero {
       position: relative;
-      height: 32vh;
-      min-height: 200px;
+      height: 42vh;
+      min-height: 260px;
       background-image: url('images/piano.png'); 
       background-size: cover;
       background-position: center;
@@ -35,9 +36,18 @@
       inset: 0;
       background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.65));
     }
-    .hero-content { position: relative; z-index: 1; }
-    .hero h1 { margin: 0; font-size: clamp(1.8rem, 1.5rem + 1.6vw, 3rem); }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      margin: 0 0 .25rem 0;
+      font-size: clamp(1.8rem, 1.5rem + 1.6vw, 3rem);
+      letter-spacing: .02em;
+    }
+    .hero p { margin: 0; font-size: 1.05rem; opacity: .95; }
 
+    /* NAV */
     .nav {
       background: #0f172a;
       color: white;
@@ -55,30 +65,49 @@
       padding: .6rem 1rem;
       gap: 1rem;
     }
-    .brand { font-weight: 700; }
+    .brand { font-weight: 700; letter-spacing: .02em; }
     .menu { display: flex; flex-wrap: wrap; gap: .75rem; }
-    .menu a { text-decoration: none; color: white; padding: .45rem .65rem; border-radius: 999px; font-size: .95rem; transition: background .15s ease; }
+    .menu a {
+      text-decoration: none;
+      color: white;
+      padding: .45rem .65rem;
+      border-radius: 999px;
+      font-size: .95rem;
+      transition: background .15s ease;
+    }
     .menu a:hover, .menu a:focus { background: rgba(255,255,255,.14); }
 
+    /* LAYOUT */
     main { max-width: var(--maxw); margin: 0 auto; padding: 2.2rem 1.2rem 3.2rem; }
-    h2 { margin-top: 2rem; }
-    ul { margin: .5rem 0 1.5rem; padding-left: 1.2rem; }
-    ul.sublist { list-style-type: "- "; margin-left: 1.5rem; }
-    li, p { line-height: 1.65; }
-    li p { margin: .4rem 0; }
-    em { font-style: italic; }
+    section { margin-bottom: 2.8rem; }
+    h2 { margin: 0 0 .75rem; font-size: 1.35rem; }
+    p { line-height: 1.65; }
     .card {
       background: var(--surface);
       border-radius: 1.1rem;
-      padding: 1.5rem;
+      padding: 1.25rem 1.4rem;
       box-shadow: 0 14px 28px -14px rgba(0,0,0,.12);
-      margin-bottom: 2rem;
     }
+    ul { margin: .5rem 0 0; padding-left: 1.1rem; }
+    li { margin-bottom: .45rem; }
+    a { color: var(--accent); }
+    a:hover { text-decoration: underline; }
+
+    .avatar {
+      width: 105px;
+      height: 105px;
+      border-radius: 999px;
+      object-fit: cover;
+      border: 3px solid rgba(255,255,255,.85);
+      box-shadow: 0 8px 22px rgba(0,0,0,.18);
+      margin-bottom: .6rem;
+    }
+
     footer {
       border-top: 1px solid #e5e7eb;
-      padding: 1rem;
-      text-align: center;
-      font-size: .85rem;
+      padding: 1rem; 
+      text-align: center; 
+      font-size: .85rem; 
       color: var(--muted);
     }
   </style>
@@ -107,16 +136,17 @@
   </nav>
 
   <main>
-
 <i>(This page is still under construction.)</i>
 
- <section class="card"> <h2>About</h2>
+<section class="card"> <h2>About</h2>
    <p>
-     I am a pianist and composer. I started piano at age five with Claudine Boymond in Annecy, France and began composing at 13 with Sophie Lacaze and Ludovic Thirvaudey at the Geneva Conservatory. In 2019 I joined the Conservatoire of the 15th arrondissement of Paris, earning my CEM in piano in 2022 and continuing composition studies with Carlos de Castellarnau, and more recently with Jean Gobinet at the American School of Modern Music. My musical language lies at the crossroads of multiple influences, including European Romanticism, French modernism (Ravel, Fauré, Debussy, Lili Boulanger), as well as American musical theatre, jazz, and popular music. I compose for piano, chamber ensembles, string orchestra, and brass ensembles, aiming for music that is figurative, eclectic, and accessible. I am currently focusing more specifically on movies soundtracks.</p>
+     I am a pianist and composer. I started piano as a child with Claudine Boymond in Annecy, France and began composing with Sophie Lacaze and Ludovic Thirvaudey at the Geneva Conservatory. In 2019 I joined the Conservatoire of the 15th arrondissement of Paris, earning my CEM in piano in 2022 and continuing composition studies with Carlos de Castellarnau, and more recently with Jean Gobinet at the American School of Modern Music. My musical language lies at the crossroads of multiple influences, including European Romanticism, French modernism, as well as American musical theatre, jazz, and popular music. I compose for piano, chamber ensembles, string orchestra, and brass ensembles, aiming for music that is figurative, eclectic, and accessible. I am currently focusing more specifically on movies soundtracks.</p>
       <p><a href="https://soundcloud.com/lucaganassali" target="_blank">Listen on SoundCloud</a></p>
     </section>
 
-    <h2>Music for short movies</h2>
+ <h2>Music for short movies</h2>
+ Watch my most recent <a href="https://youtu.be/tb1FHHcYX6s" target="_blank">demo reel</a>.
+ 
     <ul class="sublist">
  
     <li><p><i>Un monde meilleur</i>, Martin Baillon & Claire Egnell, 2025. </p></li>
